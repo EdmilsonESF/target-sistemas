@@ -81,8 +81,6 @@ function calcResposta(faturamentoDiario: (number | undefined)[]): Resposta {
 
     const media = count > 0 ? soma / count : 0;
 
-    console.log({ media })
-
     const resposta = faturamentoDiario.reduce((acc, faturamento) => {
 
         if (!faturamento) {
